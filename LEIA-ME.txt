@@ -1,0 +1,97 @@
+LEIA-ME — pasta assets/
+=========================
+
+Coloque AQUI as fotos e a música, com EXATAMENTE estes nomes
+(assim você não precisa editar nada no js/config.js):
+
+FOTOS DA LINHA DO TEMPO (5):
+  momento1.jpg   -> 2024, na igreja (onde se conheceram)
+  momento2.jpg   -> 05 de outubro, 1º AvivaAmatus
+  momento3.jpg   -> o tempo no meio (a espera)
+  momento4.jpg   -> dezembro/2025
+  momento5.jpg   -> hoje
+
+FOTOS DAS "SKINS" (9):
+  skin-princesa.jpg
+  skin-rockeira.jpg
+  skin-cosplay.jpg
+  skin-danca.jpg
+  skin-foto.jpg
+  skin-mar.jpg
+  skin-pijama.jpg   (modo pijama)
+  skin-show.jpg     (modo show)
+  skin-date.jpg     (modo date)
+
+FOTO EM TELA CHEIA (1):
+  foto-destaque.jpg   -> a foto grande que aparece sozinha, antes da virada
+                         (de preferência uma horizontal, bonita, de vocês dois)
+
+MÚSICA — A PLAYLIST (nova!):
+  Agora ela escolhe a 1ª música numa tela logo depois do terminal, e quando
+  a faixa acaba o site pula sozinho pra próxima (e dá a volta no fim).
+
+  Coloque os arquivos em  assets/musicas/  com estes nomes (ou troque os
+  caminhos em  js/config.js -> playlist):
+    assets/musicas/adore-you.mp3            -> Adore You — Harry Styles
+    assets/musicas/dona-do-pensamento.mp3   -> Dona do Meu Pensamento — Charlie Brown Jr.
+    assets/musicas/the-drug-in-me.mp3       -> The Drug In Me Is You — Falling in Reverse
+    assets/musicas/nao-sei-viver.mp3        -> Não Sei Viver Sem Ter Você — CPM 22
+    assets/musicas/treat-you-better.mp3     -> Treat You Better — Shawn Mendes
+
+  Pode ter quantas quiser: é só adicionar/remover itens em  config.js -> playlist
+  (cada item = { arquivo, titulo, artista }). A ORDEM da lista é a ordem em que
+  vão tocando depois da escolha dela.
+
+  Fallback: se você deixar a 'playlist' vazia, o site volta a usar a música única
+  'nossa-musica.mp3' (config.js -> musica) automaticamente.
+
+DICAS:
+- Se faltar alguma foto, o site mostra um placeholder bonito no lugar
+  (então dá pra testar antes de ter tudo).
+- Quiser usar outros nomes? Sem problema: é só apontar o caminho
+  certo em js/config.js.
+- Para o site ficar leve no GitHub Pages, comprima as fotos
+  (ex.: ~1600px de largura, qualidade ~80%) e o mp3 (ex.: 128 kbps).
+
+
+CENAS v2.6 (versículos + ingresso):
+  Não precisam de NENHUM arquivo novo em assets/ — são 100% texto/canvas.
+  Edite os textos em js/config.js (blocos 'versiculos' e 'ingresso').
+  No 'ingresso', troque 'data' e 'lugar' quando confirmar o evento.
+
+
+DUNAMIS v2.8 (pino-segredo no mapa + fast pass):
+  Nenhum arquivo novo em assets/ — é tudo texto/CSS.
+  - Ingresso comprado: 29/08/2026, São Paulo/SP (local exato "em breve").
+  - No mapa aparece um PINO TRANCADO 🔒 (coral) chamado "???". Ela não sabe o que é.
+    Quando ela REVELA o ingresso lá no final, o pino DESTRAVA sozinho e mostra
+    "Conferência Dunamis · 29/08 · SP". (Ligação automática, não precisa configurar.)
+  - O FAST PASS aparece como um selo dourado no ticket quando ele é revelado
+    (texto em js/config.js -> ingresso.bonus; deixe "" pra esconder).
+  - ÚNICO ajuste manual: quando souber o LOCAL EXATO do evento, troque a 'coord'
+    do pino  tipo:"segredo"  em  js/config.js -> mapa.pinos  (hoje num ponto
+    central de SP). Botão direito no Google Maps -> "O que há aqui?" -> copie lat,lng.
+
+
+CENA v2.7 ("você nunca vai estar sozinha" — antes do pedido):
+  Todos os arquivos abaixo são OPCIONAIS (sem eles, o site mostra placeholder
+  bonito / a inicial do nome). Edite os textos em js/config.js -> bloco 'amada'.
+
+  FOTOS DOS DESTAQUES (opcionais):
+    assets/amada-mae.jpg
+    assets/amada-pai.jpg
+    assets/amada-avo.jpg
+    assets/amada-ana.jpg
+
+  ÁUDIOS DOS DESTAQUES (opcionais — só aparece o player se o item tiver 'audio'):
+    assets/vozes/mae.mp3
+    assets/vozes/pai.mp3
+    assets/vozes/ana.mp3
+    (o Vô está sem áudio de propósito — só texto. Se tiver uma gravação, é só
+     apontar o caminho em config.js -> amada.destaques)
+
+  MURAL (escola/de fora/antigos): NÃO precisa de foto. Se quiser, dá pra apontar
+  uma foto em cada item (campo 'foto'); sem foto, mostra a inicial num círculo.
+
+  IMPORTANTE: os textos que vêm no config são EXEMPLO (marcados [exemplo]/[ex]).
+  Troque pelos recados reais das pessoas. As palavras são de cada um — colete antes.
