@@ -1,0 +1,17 @@
+# dependências (só o jsdom, usado nos testes)
+node_modules/
+package-lock.json
+
+# mídia pessoal — NÃO versione conteúdo com direitos autorais
+# nem fotos/áudios de outras pessoas em repositório público
+assets/musicas/*
+!assets/musicas/README.md
+assets/vozes/*
+!assets/vozes/README.md
+
+# sistema / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.log
