@@ -1,0 +1,22 @@
+{
+  "name": "nos-exe",
+  "version": "1.0.0",
+  "description": "Um pedido de namoro que roda no navegador. 26 cenas em HTML, CSS e JS puro — sem framework, sem build, sem backend.",
+  "private": true,
+  "scripts": {
+    "start": "python3 -m http.server 8080",
+    "check": "node --check js/config.js && node --check js/script.js",
+    "test": "npm run check && node tests/smoke.js"
+  },
+  "keywords": [
+    "vanilla-js",
+    "canvas",
+    "storytelling",
+    "github-pages",
+    "no-build"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "jsdom": "^24.1.3"
+  }
+}
